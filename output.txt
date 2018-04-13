@@ -1,0 +1,52 @@
+(683, 10)
+Index(['Clump Thickness', 'Uniformity of Cell Size',
+       'Uniformity of Cell Shape', 'Marginal Adhesion',
+       'Single Epithelial Cell Size', 'Bare Nuclei', 'Bland Chromatin',
+       'Normal Nucleoli', 'Mitoses'],
+      dtype='object')
+Class
+Averages
+Clump Thickness                4.382374e-16
+Uniformity of Cell Size        2.750362e-16
+Uniformity of Cell Shape       5.052084e-16
+Marginal Adhesion             -2.020508e-16
+Single Epithelial Cell Size   -2.489468e-16
+Bare Nuclei                    5.648646e-17
+Bland Chromatin               -1.339420e-16
+Normal Nucleoli                1.004240e-15
+Mitoses                        1.032849e-15
+Class                          2.699854e+00
+dtype: float64
+
+ Deviations
+Clump Thickness                1.000000
+Uniformity of Cell Size        1.000000
+Uniformity of Cell Shape       1.000000
+Marginal Adhesion              1.000000
+Single Epithelial Cell Size    1.000000
+Bare Nuclei                    1.000000
+Bland Chromatin                1.000000
+Normal Nucleoli                1.000000
+Mitoses                        1.000000
+Class                          0.911246
+dtype: float64
+(478, 9) (478, 2)
+(205, 9) (205, 2)
+Tensor("Const:0", shape=(478, 9), dtype=float32)
+Tensor("Const_1:0", shape=(478, 2), dtype=float32)
+1.9057035
+Loss at step 0: 1.905704
+Training accuracy: 30.3%
+Validation accuracy: 31.2%
+Loss at step 2000: 0.154820
+Training accuracy: 95.8%
+Validation accuracy: 96.1%
+Loss at step 4000: 0.100707
+Training accuracy: 96.2%
+Validation accuracy: 97.1%
+Loss at step 6000: 0.077260
+Training accuracy: 96.9%
+Validation accuracy: 96.6%
+Loss at step 8000: 0.067202
+Training accuracy: 97.1%
+Validation accuracy: 97.1%

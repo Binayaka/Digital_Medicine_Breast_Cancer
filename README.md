@@ -37,8 +37,26 @@
         so that our model's accuracy can be judged.
 
 ## Pre-processing
-        The DigitalMedicinePreprocessing is an eclipse Maven project5, which was used to clean the data
+        The DigitalMedicinePreprocessing is an eclipse Maven project, which was used to clean the data
         and separate into the training and testing data sets. The original data paths are hardcoded for now.
 
 ## Machine Learning Set up
-        Setup a tensorflow training net with 2 hidden layers. 
+        Setup a tensorflow training net with 10 hidden layers.
+
+
+# Results
+        Loss at step 0: 1.905704
+        Training accuracy: 30.3%
+        Validation accuracy: 31.2%
+        Loss at step 2000: 0.154820
+        Training accuracy: 95.8%
+        Validation accuracy: 96.1%
+        Loss at step 4000: 0.100707
+        Training accuracy: 96.2%
+        Validation accuracy: 97.1%
+        Loss at step 6000: 0.077260
+        Training accuracy: 96.9%
+        Validation accuracy: 96.6%
+        Loss at step 8000: 0.067202
+        Training accuracy: 97.1%
+        Validation accuracy: 97.1%

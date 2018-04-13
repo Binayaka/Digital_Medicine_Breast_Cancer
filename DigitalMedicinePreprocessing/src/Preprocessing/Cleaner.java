@@ -13,6 +13,7 @@ import org.apache.commons.collections4.ListUtils;
 
 public class Cleaner {
 	public static final String	ORIGINAL		= "D:\\Downloads\\Documents\\breast-cancer-wisconsin.data.txt";
+	public static final String	CLEANED			= "D:\\Downloads\\Documents\\breast-cancer-wisconsin.data.cleaned.complete.csv";
 	public static final String	CLEANED_TRAIN	= "D:\\Downloads\\Documents\\breast-cancer-wisconsin.data.cleaned.train.csv";
 	public static final String	CLEANED_TEST	= "D:\\Downloads\\Documents\\breast-cancer-wisconsin.data.cleaned.test.csv";
 	public static final String	HEADER			= "ID,Clump Thickness,Uniformity of Cell Size,Uniformity of Cell Shape,Marginal Adhesion,Single Epithelial Cell Size,Bare Nuclei,Bland Chromatin,Normal Nucleoli,Mitoses,Class";
@@ -23,6 +24,36 @@ public class Cleaner {
 	}
 
 	public void run() {
+		try {
+			String line = "";
+			FileReader fileReader = new FileReader(ORIGINAL);
+			BufferedReader bufferedReader = new BufferedReader(fileReader);
+			List<String> instances = new ArrayList<>();
+			instances.add(HEADER);
+			while ((line = bufferedReader.readLine()) != null) {
+				if (!line.contains("?")) {
+					instances.add(line);
+				}
+			}
+			FileWriter fileWriter = new FileWriter(CLEANED);
+			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+			for (String s : instances) {
+				bufferedWriter.write(s);
+				bufferedWriter.write("\r\n");
+			}
+			bufferedWriter.close();
+			fileWriter.close();
+			bufferedReader.close();
+			fileReader.close();
+		} catch (FileNotFoundException ex) {
+			System.out.println("Unable to open file '" + ORIGINAL + "'");
+		} catch (IOException ex) {
+			System.out.println("Error reading file '" + ORIGINAL + "'");
+			ex.printStackTrace();
+		}
+	}
+
+	public void splitIntoTwo() {
 		try {
 			String line = "";
 			FileReader fileReader = new FileReader(ORIGINAL);

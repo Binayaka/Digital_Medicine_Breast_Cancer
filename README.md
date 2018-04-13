@@ -37,7 +37,8 @@
         so that our model's accuracy can be judged.
 
 ## Pre-processing
-        Converted the data into a json format, with two key-value pairs (benign and malignant)
+        The DigitalMedicinePreprocessing is an eclipse Maven project5, which was used to clean the data
+        and separate into the training and testing data sets. The original data paths are hardcoded for now.
 
 ## Machine Learning Set up
         Setup a tensorflow training net with 2 hidden layers. 

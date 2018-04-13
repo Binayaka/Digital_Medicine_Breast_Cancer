@@ -32,8 +32,8 @@
         by taking 105 instances of the original file. These instances are removed from the training set, 
         so that our model's accuracy can be judged.
 
-    ## Pre-processing
+## Pre-processing
         Converted the data into a json format, with two key-value pairs (benign and malignant)
 
-    ## Machine Learning Set up
+## Machine Learning Set up
         Setup a tensorflow training net with 2 hidden layers. 

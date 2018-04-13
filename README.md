@@ -5,7 +5,9 @@
 ## Dataset
 
         The dataset used is :
-        [Wisconsin Breast Cancer Dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/)
+        [Wisconsin Breast Cancer Dataset]
+        
+        (https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/)
 
 
 ## Attribute Information: (class attribute has been moved to last column)
@@ -21,15 +23,17 @@
     7. Bare Nuclei                   1 - 10
     8. Bland Chromatin               1 - 10
     9. Normal Nucleoli               1 - 10
-    10. Mitoses                       1 - 10
-    11. Class:                        (2 for benign, 4 for malignant)
+    10. Mitoses                      1 - 10
+    11. Class:                       (2 for benign, 4 for malignant)
+
 
 ## Issues
     Missing attribute values: 16
-        There are 16 instances that contain a single missing attribute value, denoted by "?". These instances were not taken for consideration.
+        There are 16 instances that contain a single missing attribute value, denoted by "?". 
+        These instances were not taken for consideration.
 
         After cleaning the dataset, the original file is divided into training set and test set, 
-        by taking 105 instances of the original file. These instances are removed from the training set, 
+        by taking 15% instances of the original file. These instances are removed from the training set, 
         so that our model's accuracy can be judged.
 
 ## Pre-processing
